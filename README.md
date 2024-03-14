@@ -20,10 +20,10 @@ Create all canisters
 dfx canister create --all
 ```
 
-Build declaration files
+Build test canister declaration files
 
 ```bash
-dfx generate
+dfx generate test
 ```
 
 ### Start a tunnel

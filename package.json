@@ -26,7 +26,7 @@
     "start": "turbo run start",
     "lint": "turbo run lint",
     "generate": "dfx generate",
-    "tunnel:start": "npx tsx ./scripts/tunnel/src/index.ts",
+    "tunnel:start": "npx --yes tsx ./scripts/tunnel/src/index.ts",
     "clean": "turbo run clean && rm -rf node_modules && rm -rf .turbo && rm -rf src &&  rm -rf .dfx"
   },
   "dependencies": {},
