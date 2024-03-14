@@ -32,7 +32,7 @@ dfx generate
 npm run tunnel:start
 ```
 
-A result will be displayed as follows:
+Results will be displayed as follows:
 
 ```bash
 > motoko-nextjs-react-native@0.1.0 tunnel:start
@@ -43,13 +43,13 @@ https://breezy-bats-watch.loca.lt
 
 ### Set Internet Identity Middleware
 
-Clone the `.env-example` file and name it `.env`:
+Clone the `.env-example` file and rename it to `.env`:
 
 ```bash
 cp frontend/internet-identity-middleware/.env-example frontend/internet-identity-middleware/.env
 ```
 
-Get your Internet Identity Canister ID:
+Obtain your Internet Identity Canister ID:
 
 ```bash
 dfx canister id internet-identity
@@ -60,7 +60,7 @@ Replace `.env` values:
 ```
 # Replace YOUR_LOCALTUNNEL_URL with the URL obtained by the command npm run tunnel:start
 # for example, https://abcdefgjhij.localtunnel.me
-# Replace YOUR_INTERNET_IDENTITY_CANISTER_ID with the value obteined above
+# Replace YOUR_INTERNET_IDENTITY_CANISTER_ID with the value from above step
 REACT_APP_INTERNET_IDENTITY_URL=YOUR_LOCALTUNNEL_URL?canisterId=YOUR_INTERNET_IDENTITY_CANISTER_ID
 ```
 
@@ -72,7 +72,7 @@ Clone the `.env-example` file and name it `.env`:
 cp frontend/mobileapp/.env-example frontend/mobileapp/.env
 ```
 
-Get your Internet Identity Middleware Canister ID:
+Obtain your Internet Identity Middleware Canister ID:
 
 ```bash
 dfx canister id internet-identity-middleware
@@ -84,30 +84,30 @@ Replace `.env` values:
 # Replace with your APP_LINK if needed
 EXPO_PUBLIC_APP_LINK='exp://192.168.0.125:8081'
 
-# Replcate YOUR_LOCALTUNNEL_URL with your localtunnel URL
+# Replace YOUR_LOCALTUNNEL_URL with your localtunnel URL
 # for example, https://abcdefgjhij.localtunnel.me
 EXPO_PUBLIC_IC_HOST_URL='YOUR_LOCALTUNNEL_URL'
 
-# Replcate YOUR_LOCALTUNNEL_URL with your localtunnel URL
-# and replace YOUR_MIDDLEWARE_CANISTER_ID with your middleware canister ID
+# Replace YOUR_LOCALTUNNEL_URL with your localtunnel URL
+# and also replace YOUR_MIDDLEWARE_CANISTER_ID with your middleware canister ID
 EXPO_PUBLIC_INTERNET_IDENTITY_MIDDLEWARE_URL='YOUR_LOCALTUNNEL_URL?canisterId=YOUR_MIDDLEWARE_CANISTER_ID'
 ```
 
 ### Set Webapp
 
-Clone the `.env-example` file and name it `.env`:
+Clone the `.env-example` file and rename it to `.env`:
 
 ```bash
 cp frontend/webapp/.env-example frontend/webapp/.env
 ```
 
-Get your Test Canister ID:
+Obtain your Test Canister ID:
 
 ```bash
 dfx canister id test
 ```
 
-Get your Internet Identity Canister ID:
+Obtain your Internet Identity Canister ID:
 
 ```bash
 dfx canister id internet-identity
